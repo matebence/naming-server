@@ -1,10 +1,12 @@
 spring:
   application:
     name: naming-server
-  cloud:
-    config:
-      uri: http://192.168.99.100:8888
-  profiles:
-    active: dev
 server:
+  error:
+    whitelabel:
+      enabled: false
   port: 8761
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
