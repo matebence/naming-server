@@ -31,4 +31,6 @@ build/
 .vscode/
 
 ### Profile ###
-/src/main/resources/bootstrap.yml
+/src/main/resources/application.yml
+/DockerFile
+/wait-for-it.sh
