@@ -5,6 +5,8 @@ spring:
     user:
       name: app-blesk-naming-server
       password: b1477e9ba7723b8f47e9727a39a51edf
+    basic:
+      enabled: true
 server:
   error:
     whitelabel:
