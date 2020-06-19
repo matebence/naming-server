@@ -11,10 +11,8 @@ server:
       enabled: false
   port: 8761
 eureka:
-  password: b1477e9ba7723b8f47e9727a39a51edf
   client:
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://app-blesk-naming-server:b1477e9ba7723b8f47e9727a39a51edf@localhost:8761/eureka/
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-    instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
