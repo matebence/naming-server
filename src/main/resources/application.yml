@@ -12,5 +12,8 @@ server:
   port: 8761
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+  password: b1477e9ba7723b8f47e9727a39a51edf
